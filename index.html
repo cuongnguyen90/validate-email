@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checking Email</title>
+</head>
+<body>
+<script>
+    let input = prompt("Nhap vao email",);
+    let pattern = /^[aA-zZ]+[^[.*^+\]]@[aA-zZ]+\.[aA-zZ]+/;
+    let test = pattern.test(input);
+    if (test){
+        alert ('Email hop le');
+    }else {
+        alert('Email khong hop le');
+    }
+</script>
+</body>
+</html>
